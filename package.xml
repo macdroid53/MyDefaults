@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1">
+
+  <name>MacDefaults</name>
+  <description>Macs preferred configuration</description>
+  <version>2022.9.15</version>
+
+  <maintainer email="macdroid53@gmail.com">macdroid53</maintainer>
+
+  <license file="LICENSE">LGPLv2.1</license>
+  <url type="repository" branch="main">https://github.com/macdroid53/MacDefaults</url>
+  <icon>resources/icons/Atom.svg</icon>
+
+  <url type="readme">https://github.com/macdroid53/MacDefaults/README.md</url>
+
+</package>
