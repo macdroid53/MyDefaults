@@ -11,7 +11,7 @@
   <url type="repository" branch="main">https://github.com/macdroid53/MacDefaults</url>
   <icon>resources/icons/Atom.svg</icon>
 
-  <url type="readme">https://github.com/macdroid53/MacDefaults/README.md</url>
+<!--  <url type="readme">https://github.com/macdroid53/MacDefaults/README.md</url> -->
 
   <content>
     <preferencepack>
