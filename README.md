@@ -1,13 +1,10 @@
-# MacDefaults *(Work In Progress)*
+# MyDefaults *(Work In Progress)*
 
 ![screenshot](/screenshot.png)
 
 A minimal theme inspired by Zolko for [FreeCAD](https://www.freecad.org).
 
 FreeCAD [Preference Pack](https://wiki.freecad.org/Preference_Packs) providing UI configuration for basic mechanical design for [FreeCAD](https://www.freecad.org)
-
-
-## Screenshots
 
 
 ## Install
