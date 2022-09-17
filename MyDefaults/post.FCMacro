@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# PreferencePack MyDefaults post.FCMacro 
 import os 
 import FreeCAD
 from PySide2 import QtGui, QtCore, QtWidgets
@@ -62,14 +63,20 @@ param_grp=FreeCAD.ParamGet("User parameter:BaseApp/MainWindow/DockWindows")
 param_grp.SetBool("Std_ReportView", True)
 param_grp.SetBool("Std_PythonView", True)
 
-pp_cfg_path='/home/mac/.local/share/FreeCAD/Mod/ZolkoBase/ZolkoBase/ZolkoBase.cfg'
+user_app_data = FreeCAD.getUserAppDataDir()
+#pp_cfg_path='/home/mac/.local/share/FreeCAD/Mod/MyDefaults/MyDefaults/MyDefaults.cfg'
+pp_cfg_path=user_app_data + 'Mod/MyDefaults/MyDefaults/MyDefaults.cfg'
 xml_tree_path = "User parameter:Tux/PersistentToolbars/User"
 benches = get_group(pp_cfg_path, xml_tree_path)
+print('Found child count :' + len(benches.childNodes))
 #presumably benches will contain children that are the nodes for each bench
 #defined in "User parameter:Tux/PersistentToolbars/User"
 #get_children will process the child nodes of each bench
 for bench in benches.childNodes:
-    get_children(bench)
+    try:
+        get_children(bench)
+    except:
+        print('Node value: | ', bench.nodeValue, ' |')
 
 msg="To complete the changes, restart FreeCAD!"
 diag = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Information, 'Restart Required', msg)
