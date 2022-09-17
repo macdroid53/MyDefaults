@@ -68,7 +68,7 @@ user_app_data = FreeCAD.getUserAppDataDir()
 pp_cfg_path=user_app_data + 'Mod/MyDefaults/MyDefaults/MyDefaults.cfg'
 xml_tree_path = "User parameter:Tux/PersistentToolbars/User"
 benches = get_group(pp_cfg_path, xml_tree_path)
-print('Found child count :' + len(benches.childNodes))
+print('Found child count :' + str(benches.childNodes))
 #presumably benches will contain children that are the nodes for each bench
 #defined in "User parameter:Tux/PersistentToolbars/User"
 #get_children will process the child nodes of each bench
